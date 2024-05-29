@@ -43,7 +43,7 @@ function scssDev() {
 
     return src(PATH.scssRoot, {sourcemaps: true})
         .pipe(sass().on('error', sass.logError))
-        .pipe(postcss(pluginsForMiniFiled))
+        .pipe(postcss(pluginsForDevMode))
         .pipe(dest(PATH.cssFolder, {sourcemaps: true}))
         .pipe(browserSync.stream())
 }
