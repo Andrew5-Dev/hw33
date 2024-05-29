@@ -1,0 +1,24 @@
+@import "logo";
+
+$border: 2px solid gray;
+$gap: 20px;
+
+.scss-demo {
+  margin-top: $gap * 2;
+  padding: $gap;
+
+  border-top: $border;
+
+  h2 {
+    text-align: center;
+
+    color: green;
+  }
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+
+  font-weight: 500;
+}
